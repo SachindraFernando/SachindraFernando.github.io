@@ -237,6 +237,9 @@ figure {
   float: left;
   margin-bottom: 10em;
   clear: both; }
+  @media screen and (max-width: 768px) {
+    #colorlib-hero {
+      margin-bottom: 0; } }
   #colorlib-hero .flexslider {
     border: none;
     z-index: 1;
@@ -255,7 +258,9 @@ figure {
       @media screen and (max-width: 768px) {
         #colorlib-hero .flexslider .slides li {
           height: auto;
-          min-height: 100vh; } }
+          min-height: 100vh;
+          background-position: center center;
+          background-size: cover; } }
 
 
     #colorlib-hero .flexslider .flex-control-nav {
@@ -316,7 +321,9 @@ figure {
           font-weight: 700; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
-              font-size: 28px; } }
+              font-size: 22px;
+              text-align: left;
+              padding-right: 15px; } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;
@@ -1458,23 +1465,26 @@ body.offcanvas {
 .social-icons > li > a:hover:after{ -webkit-transform: scale(1); transform: scale(1); }
 
 .s-m{
-  margin-top: 10px;
   margin: 20px auto;
-  justify-content: space-around;
+  justify-content: flex-start;
   display: flex;
   max-width: 500px;
   flex-wrap: wrap;
+  gap: 8px;
 }
 @media screen and (max-width: 768px) {
   .s-m {
-    margin: 15px auto;
+    margin: 15px 0;
     max-width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
   }
   .s-m a {
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    line-height: 45px;
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 38px;
   }
 }
 .s-m a{
